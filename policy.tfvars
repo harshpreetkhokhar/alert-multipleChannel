@@ -48,10 +48,10 @@ destination = {
 typeofdestination      = "EMAIL"
 property-value         = "kharshpreet13@gmail.com"}
 "1"={
-  property-key           = "email"
+  property-key           = "url"
    name="dest-2"
-typeofdestination      = "EMAIL"
-property-value         = "harshpreetk126@gmail.com"
+typeofdestination      = "WEBHOOK"
+property-value         = "https://webhook.site/e10ba2b8-3539-42b6-84d8-d7216a91606e"
 }
 }
 channel={"0"={
@@ -62,11 +62,11 @@ channel-property-key   = "alert"
 channel-property-value = "transaction took too longg"
 }
 "1"={
-  channel-type           = "EMAIL"
+  channel-type           = "WEBHOOK"
    name="channel-1"
 channel-product        = "IINT"
-channel-property-key   = "alert"
-channel-property-value = "transaction took too longg-1"
+channel-property-key   = "payload"
+channel-property-value = "{{ json incidentIds }}"
 }
 }
 
